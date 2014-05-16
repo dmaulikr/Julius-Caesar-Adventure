@@ -22,6 +22,8 @@
 		E515C7A019226C0400806CB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E515C77F19226C0300806CB5 /* UIKit.framework */; };
 		E515C7A819226C0400806CB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E515C7A619226C0400806CB5 /* InfoPlist.strings */; };
 		E515C7AA19226C0400806CB5 /* Julius_Caesar_AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E515C7A919226C0400806CB5 /* Julius_Caesar_AdventureTests.m */; };
+		E558116F192511C4008BE4C0 /* Screens in Resources */ = {isa = PBXBuildFile; fileRef = E558116E192511C4008BE4C0 /* Screens */; };
+		E5581171192528C9008BE4C0 /* Choices.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5581170192528C9008BE4C0 /* Choices.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E515C7A519226C0400806CB5 /* Julius Caesar AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Julius Caesar AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		E515C7A719226C0400806CB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E515C7A919226C0400806CB5 /* Julius_Caesar_AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Julius_Caesar_AdventureTests.m; sourceTree = "<group>"; };
+		E558116E192511C4008BE4C0 /* Screens */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screens; sourceTree = "<group>"; };
+		E5581170192528C9008BE4C0 /* Choices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Choices.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +118,14 @@
 		E515C78119226C0300806CB5 /* Julius Caesar Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				E558116E192511C4008BE4C0 /* Screens */,
 				E515C78A19226C0300806CB5 /* AppDelegate.h */,
 				E515C78B19226C0300806CB5 /* AppDelegate.m */,
 				E515C78D19226C0300806CB5 /* Main_iPhone.storyboard */,
 				E515C79019226C0300806CB5 /* Main_iPad.storyboard */,
 				E515C79319226C0300806CB5 /* ViewController.h */,
 				E515C79419226C0300806CB5 /* ViewController.m */,
+				E5581170192528C9008BE4C0 /* Choices.plist */,
 				E515C79619226C0300806CB5 /* Images.xcassets */,
 				E515C78219226C0300806CB5 /* Supporting Files */,
 			);
@@ -232,9 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E515C79219226C0300806CB5 /* Main_iPad.storyboard in Resources */,
+				E5581171192528C9008BE4C0 /* Choices.plist in Resources */,
 				E515C79719226C0300806CB5 /* Images.xcassets in Resources */,
 				E515C78F19226C0300806CB5 /* Main_iPhone.storyboard in Resources */,
 				E515C78619226C0300806CB5 /* InfoPlist.strings in Resources */,
+				E558116F192511C4008BE4C0 /* Screens in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +478,7 @@
 				E515C7AF19226C0400806CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E515C7B019226C0400806CB5 /* Build configuration list for PBXNativeTarget "Julius Caesar AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +487,7 @@
 				E515C7B219226C0400806CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

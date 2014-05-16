@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>00</key>
+	<array>
+		<string>Go back</string>
+	</array>
+	<key>0</key>
+	<array>
+		<string>Look around</string>
+		<string>Go back to sleep</string>
+	</array>
+</dict>
+</plist>
