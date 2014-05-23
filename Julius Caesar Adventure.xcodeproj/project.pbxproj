@@ -24,6 +24,10 @@
 		E515C7AA19226C0400806CB5 /* Julius_Caesar_AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E515C7A919226C0400806CB5 /* Julius_Caesar_AdventureTests.m */; };
 		E558116F192511C4008BE4C0 /* Screens in Resources */ = {isa = PBXBuildFile; fileRef = E558116E192511C4008BE4C0 /* Screens */; };
 		E5581171192528C9008BE4C0 /* Choices.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5581170192528C9008BE4C0 /* Choices.plist */; };
+		E5E95136192D978700567750 /* choicesBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E95135192D978700567750 /* choicesBG.png */; };
+		E5ED35B9192BD7F70098D50E /* shortTopBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */; };
+		E5ED35BA192BD7F70098D50E /* longTopBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */; };
+		E5FD70D7192E5DDC008F009C /* cellBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E5FD70D6192E5DDC008F009C /* cellBG.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		E515C7A919226C0400806CB5 /* Julius_Caesar_AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Julius_Caesar_AdventureTests.m; sourceTree = "<group>"; };
 		E558116E192511C4008BE4C0 /* Screens */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screens; sourceTree = "<group>"; };
 		E5581170192528C9008BE4C0 /* Choices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Choices.plist; sourceTree = "<group>"; };
+		E5E95135192D978700567750 /* choicesBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choicesBG.png; sourceTree = "<group>"; };
+		E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shortTopBG@2x.png"; sourceTree = "<group>"; };
+		E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "longTopBG@2x.png"; sourceTree = "<group>"; };
+		E5FD70D6192E5DDC008F009C /* cellBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBG.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,10 @@
 		E515C78119226C0300806CB5 /* Julius Caesar Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				E5FD70D6192E5DDC008F009C /* cellBG.png */,
+				E5E95135192D978700567750 /* choicesBG.png */,
+				E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */,
+				E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */,
 				E558116E192511C4008BE4C0 /* Screens */,
 				E515C78A19226C0300806CB5 /* AppDelegate.h */,
 				E515C78B19226C0300806CB5 /* AppDelegate.m */,
@@ -241,7 +253,11 @@
 				E5581171192528C9008BE4C0 /* Choices.plist in Resources */,
 				E515C79719226C0300806CB5 /* Images.xcassets in Resources */,
 				E515C78F19226C0300806CB5 /* Main_iPhone.storyboard in Resources */,
+				E5ED35BA192BD7F70098D50E /* longTopBG@2x.png in Resources */,
+				E5E95136192D978700567750 /* choicesBG.png in Resources */,
 				E515C78619226C0300806CB5 /* InfoPlist.strings in Resources */,
+				E5ED35B9192BD7F70098D50E /* shortTopBG@2x.png in Resources */,
+				E5FD70D7192E5DDC008F009C /* cellBG.png in Resources */,
 				E558116F192511C4008BE4C0 /* Screens in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,10 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lingqun Liu (52S97JBH53)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Julius Caesar Adventure/Julius Caesar Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Julius Caesar Adventure/Julius Caesar Adventure-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,10 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lingqun Liu (7AF5Z7A955)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Julius Caesar Adventure/Julius Caesar Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Julius Caesar Adventure/Julius Caesar Adventure-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

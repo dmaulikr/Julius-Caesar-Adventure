@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-99-mCT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-99-mCT">
                                 <rect key="frame" x="0.0" y="368" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="8bW-pr-OIc"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="eia-4g-unj">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="36" id="eia-4g-unj">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eia-4g-unj" id="zIF-Pq-4sZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -38,26 +38,43 @@
                                     <outlet property="delegate" destination="kh9-bI-dsS" id="S3h-hh-9Ib"/>
                                 </connections>
                             </tableView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bc6-Kc-iDG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZZB-0g-F9f">
                                 <rect key="frame" x="0.0" y="20" width="320" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="cDl-WO-1U8"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bc6-Kc-iDG">
+                                <rect key="frame" x="20" y="100" width="280" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="biI-em-v9F"/>
+                                    <constraint firstAttribute="width" constant="280" id="YN0-eZ-9vm"/>
                                 </constraints>
                             </webView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hr-C9-g1c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bc6-Kc-iDG" firstAttribute="centerX" secondItem="MTH-99-mCT" secondAttribute="centerX" id="1ch-L4-vCP"/>
                             <constraint firstAttribute="centerX" secondItem="MTH-99-mCT" secondAttribute="centerX" id="HiQ-l4-Yq2"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MTH-99-mCT" secondAttribute="bottom" id="KK5-m9-8M0"/>
-                            <constraint firstItem="MTH-99-mCT" firstAttribute="top" secondItem="bc6-Kc-iDG" secondAttribute="bottom" constant="-2" id="ahf-ak-xi0"/>
+                            <constraint firstItem="ZZB-0g-F9f" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="LyO-YI-9Tr"/>
+                            <constraint firstItem="bc6-Kc-iDG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="OP9-nq-ucm"/>
+                            <constraint firstItem="ZZB-0g-F9f" firstAttribute="centerX" secondItem="MTH-99-mCT" secondAttribute="centerX" id="UXW-Qd-Jcg"/>
+                            <constraint firstItem="MTH-99-mCT" firstAttribute="top" secondItem="ZZB-0g-F9f" secondAttribute="bottom" constant="-2" id="YMP-3f-3TX"/>
+                            <constraint firstItem="MTH-99-mCT" firstAttribute="top" secondItem="bc6-Kc-iDG" secondAttribute="bottom" constant="8" id="bUD-WH-HEQ"/>
                             <constraint firstAttribute="trailing" secondItem="MTH-99-mCT" secondAttribute="trailing" id="eqB-Uj-GQl"/>
-                            <constraint firstItem="bc6-Kc-iDG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="zFG-ct-3gN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="ZZB-0g-F9f" id="56X-vC-vD6"/>
+                        <outlet property="statusBarView" destination="1Hr-C9-g1c" id="KOA-Jr-L6w"/>
                         <outlet property="tableView" destination="MTH-99-mCT" id="FXc-qD-Uo3"/>
                         <outlet property="webView" destination="bc6-Kc-iDG" id="gF9-7X-KO9"/>
                     </connections>

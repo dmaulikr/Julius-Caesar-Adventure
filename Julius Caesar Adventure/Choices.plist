@@ -2,14 +2,68 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>00</key>
+	<key>Continue</key>
 	<array>
-		<string>Go back</string>
+		<string>Continue</string>
 	</array>
 	<key>0</key>
 	<array>
 		<string>Look around</string>
-		<string>Go back to sleep</string>
+		<string>Wait, how did I get here?</string>
 	</array>
+	<key>1</key>
+	<array>
+		<string>Go left</string>
+		<string>Go straight</string>
+		<string>Go right</string>
+	</array>
+	<key>2</key>
+	<array>
+		<string>Try to stop the bully</string>
+		<string>Ignore it and keep walking</string>
+	</array>
+	<key>3</key>
+	<array>
+		<string>Fight back physically</string>
+		<string>Run away</string>
+		<string>Try to talk the bully out of it</string>
+	</array>
+    <key>4</key>
+    <array>
+        <string>Homer's Odyssey</string>
+        <string>Curculio</string>
+        <string>Medea</string>
+        <string>Psyche and Eros</string>
+    </array>
+    <key>5</key>
+    <array>
+        <string>Play Latrunculi (Roman chess)</string>
+        <string>Fight with toy swords</string>
+        <string>Go knitting</string>
+        <string>Read books</string>
+    </array>
+    <key>6</key>
+    <array>
+        <string>Look longingly at it</string>
+        <string>Have a sense of animosity</string>
+        <string>Ignore it and walk on</string>
+    </array>
+    <key>7</key>
+    <array>
+        <string>Morning</string>
+        <string>Afternoon</string>
+    </array>
+    <key>8</key>
+    <array>
+        <string>Speak your mind</string>
+        <string>Walk on angrily</string>
+        <string>Acknowledge the man's point of view</string>
+    </array>
+    <key>9</key>
+    <array>
+        <string>Stay and watch happily</string>
+        <string>Eh, I have nothing better to do</string>
+        <string>Go somewhere else to play</string>
+    </array>
 </dict>
 </plist>
