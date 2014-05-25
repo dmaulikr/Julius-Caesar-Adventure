@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E512164F192F9A9B00B02A6E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E512164E192F9A9B00B02A6E /* StartViewController.m */; };
 		E515C77C19226C0300806CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E515C77B19226C0300806CB5 /* Foundation.framework */; };
 		E515C77E19226C0300806CB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E515C77D19226C0300806CB5 /* CoreGraphics.framework */; };
 		E515C78019226C0300806CB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E515C77F19226C0300806CB5 /* UIKit.framework */; };
@@ -14,7 +15,6 @@
 		E515C78819226C0300806CB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E515C78719226C0300806CB5 /* main.m */; };
 		E515C78C19226C0300806CB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E515C78B19226C0300806CB5 /* AppDelegate.m */; };
 		E515C78F19226C0300806CB5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E515C78D19226C0300806CB5 /* Main_iPhone.storyboard */; };
-		E515C79219226C0300806CB5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E515C79019226C0300806CB5 /* Main_iPad.storyboard */; };
 		E515C79519226C0300806CB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E515C79419226C0300806CB5 /* ViewController.m */; };
 		E515C79719226C0300806CB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E515C79619226C0300806CB5 /* Images.xcassets */; };
 		E515C79E19226C0400806CB5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E515C79D19226C0400806CB5 /* XCTest.framework */; };
@@ -22,8 +22,17 @@
 		E515C7A019226C0400806CB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E515C77F19226C0300806CB5 /* UIKit.framework */; };
 		E515C7A819226C0400806CB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E515C7A619226C0400806CB5 /* InfoPlist.strings */; };
 		E515C7AA19226C0400806CB5 /* Julius_Caesar_AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E515C7A919226C0400806CB5 /* Julius_Caesar_AdventureTests.m */; };
+		E538C3B9192FA9F1001D5476 /* start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E538C3B8192FA9F1001D5476 /* start@2x.png */; };
+		E538C3BB192FA9F7001D5476 /* start4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E538C3BA192FA9F7001D5476 /* start4@2x.png */; };
 		E558116F192511C4008BE4C0 /* Screens in Resources */ = {isa = PBXBuildFile; fileRef = E558116E192511C4008BE4C0 /* Screens */; };
 		E5581171192528C9008BE4C0 /* Choices.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5581170192528C9008BE4C0 /* Choices.plist */; };
+		E55A84A1193173C900391742 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55A84A0193173C900391742 /* ResultViewController.m */; };
+		E55A84A31931798700391742 /* dead.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A21931798700391742 /* dead.png */; };
+		E55A84A51931798D00391742 /* dead4.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A41931798D00391742 /* dead4.png */; };
+		E55A84A81931927E00391742 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55A84A71931927E00391742 /* HelpViewController.m */; };
+		E55A84AA193193B000391742 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A9193193B000391742 /* help.png */; };
+		E5D5BD6A1931988D0031FC06 /* credits4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5BD681931988D0031FC06 /* credits4@2x.png */; };
+		E5D5BD6B1931988D0031FC06 /* credits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5BD691931988D0031FC06 /* credits@2x.png */; };
 		E5E95136192D978700567750 /* choicesBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E95135192D978700567750 /* choicesBG.png */; };
 		E5ED35B9192BD7F70098D50E /* shortTopBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */; };
 		E5ED35BA192BD7F70098D50E /* longTopBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */; };
@@ -41,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E512164D192F9A9B00B02A6E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		E512164E192F9A9B00B02A6E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		E515C77819226C0300806CB5 /* Julius Caesar Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Julius Caesar Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E515C77B19226C0300806CB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E515C77D19226C0300806CB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +63,6 @@
 		E515C78A19226C0300806CB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E515C78B19226C0300806CB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E515C78E19226C0300806CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		E515C79119226C0300806CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		E515C79319226C0300806CB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E515C79419226C0300806CB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E515C79619226C0300806CB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -61,8 +71,19 @@
 		E515C7A519226C0400806CB5 /* Julius Caesar AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Julius Caesar AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		E515C7A719226C0400806CB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E515C7A919226C0400806CB5 /* Julius_Caesar_AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Julius_Caesar_AdventureTests.m; sourceTree = "<group>"; };
+		E538C3B8192FA9F1001D5476 /* start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start@2x.png"; sourceTree = "<group>"; };
+		E538C3BA192FA9F7001D5476 /* start4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start4@2x.png"; sourceTree = "<group>"; };
 		E558116E192511C4008BE4C0 /* Screens */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screens; sourceTree = "<group>"; };
 		E5581170192528C9008BE4C0 /* Choices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Choices.plist; sourceTree = "<group>"; };
+		E55A849F193173C900391742 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultViewController.h; path = ../ResultViewController.h; sourceTree = "<group>"; };
+		E55A84A0193173C900391742 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = ../ResultViewController.m; sourceTree = "<group>"; };
+		E55A84A21931798700391742 /* dead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead.png; sourceTree = "<group>"; };
+		E55A84A41931798D00391742 /* dead4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead4.png; sourceTree = "<group>"; };
+		E55A84A61931927E00391742 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		E55A84A71931927E00391742 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		E55A84A9193193B000391742 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		E5D5BD681931988D0031FC06 /* credits4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credits4@2x.png"; sourceTree = "<group>"; };
+		E5D5BD691931988D0031FC06 /* credits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credits@2x.png"; sourceTree = "<group>"; };
 		E5E95135192D978700567750 /* choicesBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choicesBG.png; sourceTree = "<group>"; };
 		E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shortTopBG@2x.png"; sourceTree = "<group>"; };
 		E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "longTopBG@2x.png"; sourceTree = "<group>"; };
@@ -126,6 +147,13 @@
 		E515C78119226C0300806CB5 /* Julius Caesar Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				E5D5BD681931988D0031FC06 /* credits4@2x.png */,
+				E5D5BD691931988D0031FC06 /* credits@2x.png */,
+				E55A84A9193193B000391742 /* help.png */,
+				E55A84A41931798D00391742 /* dead4.png */,
+				E55A84A21931798700391742 /* dead.png */,
+				E538C3B8192FA9F1001D5476 /* start@2x.png */,
+				E538C3BA192FA9F7001D5476 /* start4@2x.png */,
 				E5FD70D6192E5DDC008F009C /* cellBG.png */,
 				E5E95135192D978700567750 /* choicesBG.png */,
 				E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */,
@@ -134,9 +162,14 @@
 				E515C78A19226C0300806CB5 /* AppDelegate.h */,
 				E515C78B19226C0300806CB5 /* AppDelegate.m */,
 				E515C78D19226C0300806CB5 /* Main_iPhone.storyboard */,
-				E515C79019226C0300806CB5 /* Main_iPad.storyboard */,
+				E55A84A61931927E00391742 /* HelpViewController.h */,
+				E55A84A71931927E00391742 /* HelpViewController.m */,
+				E512164D192F9A9B00B02A6E /* StartViewController.h */,
+				E512164E192F9A9B00B02A6E /* StartViewController.m */,
 				E515C79319226C0300806CB5 /* ViewController.h */,
 				E515C79419226C0300806CB5 /* ViewController.m */,
+				E55A849F193173C900391742 /* ResultViewController.h */,
+				E55A84A0193173C900391742 /* ResultViewController.m */,
 				E5581170192528C9008BE4C0 /* Choices.plist */,
 				E515C79619226C0300806CB5 /* Images.xcassets */,
 				E515C78219226C0300806CB5 /* Supporting Files */,
@@ -249,15 +282,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E515C79219226C0300806CB5 /* Main_iPad.storyboard in Resources */,
 				E5581171192528C9008BE4C0 /* Choices.plist in Resources */,
 				E515C79719226C0300806CB5 /* Images.xcassets in Resources */,
+				E5D5BD6A1931988D0031FC06 /* credits4@2x.png in Resources */,
+				E538C3B9192FA9F1001D5476 /* start@2x.png in Resources */,
 				E515C78F19226C0300806CB5 /* Main_iPhone.storyboard in Resources */,
+				E55A84A51931798D00391742 /* dead4.png in Resources */,
 				E5ED35BA192BD7F70098D50E /* longTopBG@2x.png in Resources */,
 				E5E95136192D978700567750 /* choicesBG.png in Resources */,
+				E538C3BB192FA9F7001D5476 /* start4@2x.png in Resources */,
+				E5D5BD6B1931988D0031FC06 /* credits@2x.png in Resources */,
 				E515C78619226C0300806CB5 /* InfoPlist.strings in Resources */,
 				E5ED35B9192BD7F70098D50E /* shortTopBG@2x.png in Resources */,
+				E55A84AA193193B000391742 /* help.png in Resources */,
 				E5FD70D7192E5DDC008F009C /* cellBG.png in Resources */,
+				E55A84A31931798700391742 /* dead.png in Resources */,
 				E558116F192511C4008BE4C0 /* Screens in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E515C79519226C0300806CB5 /* ViewController.m in Sources */,
+				E55A84A81931927E00391742 /* HelpViewController.m in Sources */,
+				E512164F192F9A9B00B02A6E /* StartViewController.m in Sources */,
 				E515C78C19226C0300806CB5 /* AppDelegate.m in Sources */,
+				E55A84A1193173C900391742 /* ResultViewController.m in Sources */,
 				E515C78819226C0300806CB5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,14 +358,6 @@
 				E515C78E19226C0300806CB5 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		E515C79019226C0300806CB5 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E515C79119226C0300806CB5 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		E515C7A619226C0400806CB5 /* InfoPlist.strings */ = {

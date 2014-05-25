@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ResultViewController.h"
 
 #define SOOTHSAYER 0;
 #define OCTAVIUS 1;
@@ -40,11 +41,11 @@
     
     [_tableView setDelegate:self];
     [_tableView setDataSource:self];
-    
+
     [_webView setDelegate:self];
     
     choicesArray = [[NSMutableArray alloc] init];
-    screenTitle = @"0";
+    screenTitle = @"0_";
     screenNumber = 0;
     soothsayer = 0; octavius = 0; calpurnia = 0; portia = 0; cassius = 0; flavius = 0;
 
@@ -62,8 +63,10 @@
     [self.webView setBackgroundColor:[UIColor clearColor]];
     [self.webView setOpaque:NO];
     
-    [self setNeedsStatusBarAppearanceUpdate];
+    //[self setNeedsStatusBarAppearanceUpdate];
     [self.statusBarView setBackgroundColor:[UIColor blackColor]];
+    
+    [self.buttonView setBackgroundColor:[UIColor clearColor]];
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
@@ -79,7 +82,15 @@
     if ([fileManager fileExistsAtPath:plistPath])
     {
         plistRoot = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-        choicesArray = [plistRoot objectForKey:screenTitle];
+        choicesArray = [plistRoot objectForKey:@"0"];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    if (self.comingBack)
+    {
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -90,7 +101,7 @@
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 
 
@@ -102,14 +113,16 @@
         choicesArray = [plistRoot objectForKey:[screenTitle substringToIndex:(screenTitle.length - 1)]];
     }
     else
-        choicesArray = [plistRoot objectForKey:@"Continue"];
+    {
+        choicesArray = [plistRoot objectForKey:screenTitle];
+        if (choicesArray == nil)
+            choicesArray = [plistRoot objectForKey:@"Continue"];
+    }
     [self.tableView reloadData];
 }
 
 - (void)updateDisplay:(NSIndexPath *)indexPath direction:(NSString *)direction
 {
-    
-    
     if ([direction isEqualToString:@"BACK"])
     {
         screenTitle = @"0";
@@ -127,114 +140,224 @@
         {
             if (screenNumber == 10)
                 [self chooseChar];
+            else if (screenNumber == 14)
+            {
+                if ([character isEqualToString:@"soothsayer"] && soothsayer > 0)
+                    screenNumber++;
+                else if ([character isEqualToString:@"octavius"] && octavius > 0)
+                    screenNumber++;
+                else if ([character isEqualToString:@"calpurnia"] && calpurnia > 0)
+                    screenNumber++;
+                else if ([character isEqualToString:@"portia"] && portia > 0)
+                    screenNumber++;
+            }
             NSString* secondPart = [NSString stringWithFormat:@"%d", screenNumber - 10];
             secondPart = [secondPart stringByAppendingString:@"_"];
             screenTitle = [character stringByAppendingString:secondPart];
         }
     }
-    else
+    else if ([direction isEqualToString:@"DIED"])
+    {
+        [self performSegueWithIdentifier:@"showDeath" sender:self];
+    }
+    else if ([direction isEqualToString:@"DONE"])
+    {
+        [self performSegueWithIdentifier:@"showSuccess" sender:self];
+    }
+    else if ([direction isEqualToString:@"RESULT"])
     {
         NSInteger selected = indexPath.row;
         NSString *selectedStr = [NSString stringWithFormat:@"%ld", (long)selected];
-        if (screenNumber > 0)
-            screenTitle = [screenTitle substringToIndex:(screenTitle.length - 1)];
+        screenTitle = [screenTitle substringToIndex:(screenTitle.length - 1)];
         screenTitle = [screenTitle stringByAppendingString:selectedStr];
         [self addPoints];
     }
     
     NSString *path = [[NSBundle mainBundle] pathForResource:screenTitle ofType:@"html" inDirectory:@"Screens"];
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    NSFileManager *filemanager = [NSFileManager defaultManager];
+    if ([filemanager fileExistsAtPath:path isDirectory:NO])
+    {
+        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    }
 }
 
 - (void)addPoints
 {
-    int screenInt = [screenTitle intValue];
-    
-    switch (screenInt)
+    int screenInt;
+    if (screenNumber > 10)
     {
-        case 00:
-            soothsayer++; octavius++;
-            break;
-        case 01:
-            calpurnia++; portia++; cassius++; flavius++;
-            break;
-        case 10:
-            soothsayer+=4; calpurnia++;
-            break;
-        case 20:
-            portia+=2 ; soothsayer+=2;
-            break;
-        case 21:
-            calpurnia++; cassius+=2; octavius+=2; flavius+=3;
-            break;
-        case 30:
-            portia+=3; octavius+=4;
-            break;
-        case 31:
-            soothsayer+=2; calpurnia+=4;
-            break;
-        case 32:
-            flavius+=3; cassius+=4;
-            break;
-        case 40:
-            soothsayer++; cassius++; calpurnia++; flavius+=2; octavius+=3;
-            break;
-        case 41:
-            calpurnia++; portia+=2; cassius+=3;
-            break;
-        case 42:
-            cassius++; portia+=2;
-            break;
-        case 43:
-            portia++; soothsayer++; calpurnia+=4;
-        case 50:
-            soothsayer++; cassius +=4;
-            break;
-        case 51:
-            flavius+=2; portia+=3; octavius+=4;
-            break;
-        case 52:
-            portia++; soothsayer++; calpurnia+=4;
-            break;
-        case 53:
-            flavius++; cassius++; soothsayer+=3;
-            break;
-        case 60:
-            cassius++; soothsayer++; calpurnia+=2; octavius+=3;
-            break;
-        case 61:
-            octavius++; flavius+=3;
-            break;
-        case 62:
-            cassius+=2; portia+=2; soothsayer+=2;
-            break;
-        case 70:
-            portia+=2; calpurnia+=2;
-            break;
-        case 71:
-            portia++; octavius+=2; cassius+=2; flavius+=2; soothsayer+=2;
-            break;
-        case 80:
-            cassius++; flavius++; portia++; octavius+=3;
-            break;
-        case 81:
-            flavius+=2; cassius+=2;
-            break;
-        case 82:
-            portia++; soothsayer++; calpurnia+=4;
-            break;
-        case 90:
-            flavius++; portia+=3; octavius+=4;
-            break;
-        case 91:
-            flavius+=2; soothsayer+=3; cassius+=3;
-            break;
-        case 92:
-            soothsayer++; calpurnia+=3;
-            break;
-        default:
-            break;
+        NSString* lastTwo = [screenTitle substringFromIndex:(screenTitle.length - 2)];
+        screenInt = [lastTwo intValue];
     }
+    else screenInt = [screenTitle intValue];
+
+    if (screenNumber < 10)
+    {
+        switch (screenInt)
+        {
+            case 00:
+                soothsayer++; octavius++;
+                break;
+            case 01:
+                calpurnia++; portia++; cassius++; flavius++;
+                break;
+            case 10:
+                soothsayer+=4; calpurnia++;
+                break;
+            case 20:
+                portia+=2 ; soothsayer+=2;
+                break;
+            case 21:
+                calpurnia++; cassius+=2; octavius+=2; flavius+=3;
+                break;
+            case 30:
+                portia+=3; octavius+=4;
+                break;
+            case 31:
+                soothsayer+=2; calpurnia+=4;
+                break;
+            case 32:
+                flavius+=3; cassius+=4;
+                break;
+            case 40:
+                soothsayer++; cassius++; calpurnia++; flavius+=2; octavius+=3;
+                break;
+            case 41:
+                calpurnia++; portia+=2; cassius+=3;
+                break;
+            case 42:
+                cassius++; portia+=2;
+                break;
+            case 43:
+                portia++; soothsayer++; calpurnia+=4;
+            case 50:
+                soothsayer++; cassius +=4;
+                break;
+            case 51:
+                flavius+=2; portia+=3; octavius+=4;
+                break;
+            case 52:
+                portia++; soothsayer++; calpurnia+=4;
+                break;
+            case 53:
+                flavius++; cassius++; soothsayer+=3;
+                break;
+            case 60:
+                cassius++; soothsayer++; calpurnia+=2; octavius+=3;
+                break;
+            case 61:
+                octavius++; flavius+=3;
+                break;
+            case 62:
+                cassius+=2; portia+=2; soothsayer+=2;
+                break;
+            case 70:
+                portia+=2; calpurnia+=2;
+                break;
+            case 71:
+                portia++; octavius+=2; cassius+=2; flavius+=2; soothsayer+=2;
+                break;
+            case 80:
+                cassius++; flavius++; portia++; octavius+=3;
+                break;
+            case 81:
+                flavius+=2; cassius+=2;
+                break;
+            case 82:
+                portia++; soothsayer++; calpurnia+=4;
+                break;
+            case 90:
+                flavius++; portia+=3; octavius+=4;
+                break;
+            case 91:
+                flavius+=2; soothsayer+=3; cassius+=3;
+                break;
+            case 92:
+                soothsayer++; calpurnia+=3;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber > 10 && [character isEqualToString:@"soothsayer"])
+    {
+        switch (screenInt)
+        {
+            case 01:
+                soothsayer-=10;
+                break;
+            case 12:
+                soothsayer-=15;
+                break;
+            case 20:
+                soothsayer-=10;
+                break;
+            case 31:
+                soothsayer-=100;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber > 10 && [character isEqualToString:@"octavius"])
+    {
+        switch (screenInt)
+        {
+            case 11:
+                octavius-= 10;
+                break;
+            case 21:
+                octavius-= 10;
+                break;
+            case 31:
+                octavius-= 15;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber > 10 && [character isEqualToString:@"calpurnia"])
+    {
+        switch (screenInt)
+        {
+            case 00:
+                calpurnia-=10;
+                break;
+            case 11:
+                calpurnia-=15;
+                break;
+            case 30:
+                calpurnia-=15;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber > 10 && [character isEqualToString:@"portia"])
+    {
+        switch (screenInt)
+        {
+            case 01:
+                portia-=15;
+                break;
+            case 02:
+                portia-=100;
+                break;
+            case 11:
+                portia-=15;
+                break;
+            default:
+                break;                
+        }
+    }
+    else if (screenNumber > 10 && [character isEqualToString:@"cassius"])
+    {
+        
+    }
+    else if (screenNumber > 10 && [character isEqualToString:@"flavius"])
+    {
+        
+    }
+    
 }
 
 - (void)chooseChar
@@ -308,6 +431,7 @@
     cell.backgroundView = cellBackground;
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.font = [UIFont fontWithName:@"IowanOldStyle-Bold" size:17.0];
     
     return cell;
 }
@@ -321,17 +445,59 @@
     NSString* direction;
     
     if ([[tableView cellForRowAtIndexPath:indexPath].textLabel.text isEqualToString:@"Go back"])
-    {
         direction = @"BACK";
-    }
     else if ([[tableView cellForRowAtIndexPath:indexPath].textLabel.text isEqualToString:@"Continue"])
-    {
         direction = @"NEXT";
-    }
-    else direction = @"RESULT";
+    else if ([[tableView cellForRowAtIndexPath:indexPath].textLabel.text isEqualToString:@"Ouch..."])
+        direction = @"DIED";
+    else if (screenNumber == 15 && indexPath.row == 0)
+        direction = @"DONE";
+    else
+        direction = @"RESULT";
     
     [self updateDisplay:indexPath direction:direction];
     [self updateChoicesArray];
+}
+
+#pragma mark - Navigation
+
+- (IBAction)buttonPressed:(id)sender
+{
+    if (sender == self.logoButton)
+    {
+        UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                      initWithTitle:@""
+                                      delegate:self
+                                      cancelButtonTitle:@"Cancel"
+                                      destructiveButtonTitle:@"Back to Start"
+                                      otherButtonTitles:nil];
+        [actionSheet showInView:[self view]];
+    }
+}
+
+- (IBAction)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([buttonTitle isEqualToString:@"Back to Start"])
+    {
+        soothsayer = 0; octavius = 0; calpurnia = 0; portia = 0; cassius = 0; flavius = 0;
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDeath"])
+    {
+        ResultViewController* resultViewController = (ResultViewController *)[segue destinationViewController];
+        [resultViewController setTypesicle:@"DEAD"];
+    }
+    else if ([[segue identifier] isEqualToString:@"showSuccess"])
+    {
+        ResultViewController* resultViewController = (ResultViewController *)[segue destinationViewController];
+        [resultViewController setTypesicle:@"YAY"];
+        [resultViewController setCharacter:character];
+    }
 }
 
 @end

@@ -1,4 +1,25 @@
 body 
 {
-	font-family: sans-serif;
+	font-family: 'Arvo', sans-serif;
+}
+
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Julius Sans One'), url(http://themes.googleusercontent.com/static/fonts/juliussansone/v2/iU65JP9acQHPDLkdalCF7gaS65eljNVkG0R6HbhLwtY.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Galdeano';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Galdeano Regular'), url(http://themes.googleusercontent.com/static/fonts/galdeano/v4/XWkZhyfrNgo9X-giTt_ZfXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
 }
