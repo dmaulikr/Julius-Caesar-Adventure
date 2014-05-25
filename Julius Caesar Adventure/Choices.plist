@@ -28,196 +28,194 @@
 		<string>Run away</string>
 		<string>Try to talk the bully out of it</string>
 	</array>
-    <key>4</key>
-    <array>
-        <string>Homer's Odyssey</string>
-        <string>Curculio</string>
-        <string>Medea</string>
-        <string>Psyche and Eros</string>
-    </array>
-    <key>5</key>
-    <array>
-        <string>Play Latrunculi (Roman chess)</string>
-        <string>Fight with toy swords</string>
-        <string>Go knitting</string>
-        <string>Read books</string>
-    </array>
-    <key>6</key>
-    <array>
-        <string>Look longingly at it</string>
-        <string>Have a sense of animosity</string>
-        <string>Ignore it and walk on</string>
-    </array>
-    <key>7</key>
-    <array>
-        <string>Morning</string>
-        <string>Afternoon</string>
-    </array>
-    <key>8</key>
-    <array>
-        <string>Speak your mind</string>
-        <string>Walk on angrily</string>
-        <string>Acknowledge the man's point of view</string>
-    </array>
-    <key>9</key>
-    <array>
-        <string>Stay and watch happily</string>
-        <string>Eh, I have nothing better to do</string>
-        <string>Go somewhere else to play</string>
-    </array>
-    <key>soothsayer0</key>
-    <array>
-        <string>Give him the bread</string>
-        <string>Eat the bread</string>
-    </array>
-    <key>soothsayer1</key>
-    <array>
-        <string>Left entrance</string>
-        <string>Right entrance</string>
-        <string>Ignore it and keep walking</string>
-    </array>
-    <key>soothsayer2</key>
-    <array>
-        <string>Take up the sword and fight</string>
-        <string>Contribute nonviolently</string>
-        <string>Avoid your duties</string>
-    </array>
-    <key>soothsayer3</key>
-    <array>
-        <string>No</string>
-        <string>Yes</string>
-    </array>
-    <key>soothsayer4</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>soothsayer5</key>
-    <array>
-        <string>Yes</string>
-        <string>No</string>
-    </array>
-    <key>soothsayer51</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>soothsayer23</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>octavius0</key>
-    <array>
-        <string>Sign me up!</string>
-        <string>No, I'd rather live a peaceful life</string>
-    </array>
-    <key>octavius1</key>
-    <array>
-        <string>Left</string>
-        <string>Right</string>
-        <string>Parry him</string>
-    </array>
-    <key>octavius10</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>octavius2</key>
-    <array>
-        <string>Hold your ground</string>
-        <string>Run back</string>
-    </array>
-    <key>octavius3</key>
-    <array>
-        <string>Take control</string>
-        <string>Stay but don't take command</string>
-        <string>Run away</string>
-    </array>
-    <key>octavius5</key>
-    <array>
-        <string>Yes</string>
-        <string>No</string>
-    </array>
-    <key>octavius01</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>octavius32</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>octavius4</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>octavius51</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>calpurnia0</key>
-    <array>
-        <string>Yes</string>
-        <string>No</string>
-    </array>
-    <key>calpurnia1</key>
-    <array>
-        <string>Tell the council what you saw</string>
-        <string>Say nothing</string>
-    </array>
-    <key>calpurnia2</key>
-    <array>
-        <string>Yes! I'll defend my home</string>
-        <string>No, I'm not the fighting type</string>
-    </array>
-    <key>calpurnia3</key>
-    <array>
-        <string>Yes, it must be my head playing tricks</string>
-        <string>No, the red must mean something</string>
-    </array>
-    <key>calpurnia4</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>calpurnia5</key>
-    <array>
-        <string>Yes, of course!</string>
-        <string>No, he's not for me</string>
-    </array>
-    <key>calpurnia51</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>portia0</key>
-    <array>
-        <string>Save him!</string>
-        <string>Call for help</string>
-        <string>Ignore the plea</string>
-    </array>
-    <key>portia1</key>
-    <array>
-        <string>Yes</string>
-        <string>No</string>
-    </array>
-    <key>portia2</key>
-    <array>
-        <string>Help distribute supplies</string>
-        <string>Keep kids company</string>
-        <string>Do nothing</string>
-    </array>
-    <key>portia3</key>
-    <array>
-        <string>Fight!</string>
-        <string>Hide</string>
-    </array>
-    <key>portia4</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
-    <key>portia5</key>
-    <array>
-        <string>Yes</string>
-        <string>No</string>
-    </array>
-    <key>portia51</key>
-    <array>
-        <string>Ouch...</string>
-    </array>
+	<key>4</key>
+	<array>
+		<string>Homer&apos;s Odyssey</string>
+		<string>Curculio</string>
+		<string>Psyche and Eros</string>
+	</array>
+	<key>5</key>
+	<array>
+		<string>Play Latrunculi (Roman chess)</string>
+		<string>Fight with toy swords</string>
+		<string>Go knitting</string>
+	</array>
+	<key>6</key>
+	<array>
+		<string>Look longingly at it</string>
+		<string>Have a sense of animosity</string>
+		<string>Ignore it and walk on</string>
+	</array>
+	<key>7</key>
+	<array>
+		<string>Morning</string>
+		<string>Afternoon</string>
+	</array>
+	<key>8</key>
+	<array>
+		<string>Speak your mind</string>
+		<string>Walk on angrily</string>
+		<string>Acknowledge the man&apos;s point</string>
+	</array>
+	<key>9</key>
+	<array>
+		<string>Stay and watch happily</string>
+		<string>Eh, I have nothing better to do</string>
+		<string>Go somewhere else to play</string>
+	</array>
+	<key>soothsayer0</key>
+	<array>
+		<string>Give him the bread</string>
+		<string>Eat the bread</string>
+	</array>
+	<key>soothsayer1</key>
+	<array>
+		<string>Left entrance</string>
+		<string>Right entrance</string>
+		<string>Ignore it and keep walking</string>
+	</array>
+	<key>soothsayer2</key>
+	<array>
+		<string>Take up the sword and fight</string>
+		<string>Contribute nonviolently</string>
+		<string>Avoid your duties</string>
+	</array>
+	<key>soothsayer3</key>
+	<array>
+		<string>No</string>
+		<string>Yes</string>
+	</array>
+	<key>soothsayer4</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>soothsayer5</key>
+	<array>
+		<string>Yes</string>
+		<string>No</string>
+	</array>
+	<key>soothsayer51</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>soothsayer22</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>octavius0</key>
+	<array>
+		<string>Sign me up!</string>
+		<string>No, I&apos;d rather live a peaceful life</string>
+	</array>
+	<key>octavius1</key>
+	<array>
+		<string>Left</string>
+		<string>Right</string>
+		<string>Parry him</string>
+	</array>
+	<key>octavius10</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>octavius2</key>
+	<array>
+		<string>Hold your ground</string>
+		<string>Run back</string>
+	</array>
+	<key>octavius3</key>
+	<array>
+		<string>Take control</string>
+		<string>Stay but don&apos;t take command</string>
+		<string>Run away</string>
+	</array>
+	<key>octavius5</key>
+	<array>
+		<string>Yes</string>
+		<string>No</string>
+	</array>
+	<key>octavius01</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>octavius32</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>octavius4</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>octavius51</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>calpurnia0</key>
+	<array>
+		<string>Yes</string>
+		<string>No</string>
+	</array>
+	<key>calpurnia1</key>
+	<array>
+		<string>Tell the council what you saw</string>
+		<string>Say nothing</string>
+	</array>
+	<key>calpurnia2</key>
+	<array>
+		<string>Yes! I&apos;ll defend my home</string>
+		<string>No, I&apos;m not the fighting type</string>
+	</array>
+	<key>calpurnia3</key>
+	<array>
+		<string>Yes, it must be my head playing tricks</string>
+		<string>No, the red must mean something</string>
+	</array>
+	<key>calpurnia4</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>calpurnia5</key>
+	<array>
+		<string>Yes, of course!</string>
+		<string>No, he&apos;s not for me</string>
+	</array>
+	<key>calpurnia51</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>portia0</key>
+	<array>
+		<string>Save him!</string>
+		<string>Call for help</string>
+		<string>Ignore the plea</string>
+	</array>
+	<key>portia1</key>
+	<array>
+		<string>Yes</string>
+		<string>No</string>
+	</array>
+	<key>portia2</key>
+	<array>
+		<string>Help distribute supplies</string>
+		<string>Keep kids company</string>
+		<string>Do nothing</string>
+	</array>
+	<key>portia3</key>
+	<array>
+		<string>Fight!</string>
+		<string>Hide</string>
+	</array>
+	<key>portia4</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
+	<key>portia5</key>
+	<array>
+		<string>Yes</string>
+		<string>No</string>
+	</array>
+	<key>portia51</key>
+	<array>
+		<string>Ouch...</string>
+	</array>
 </dict>
 </plist>

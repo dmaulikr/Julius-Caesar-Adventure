@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *helpButton;
 @property (weak, nonatomic) IBOutlet UIButton *creditsButton;
+@property (weak, nonatomic) IBOutlet UIButton *heggButton;
 
 @end

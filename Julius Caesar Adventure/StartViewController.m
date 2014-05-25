@@ -9,7 +9,9 @@
 #import "StartViewController.h"
 #import "HelpViewController.h"
 
-@interface StartViewController ()
+@interface StartViewController (){
+    int heggPresses;
+}
 
 @end
 
@@ -34,7 +36,27 @@
     }
     else
     {
-        [_imageView setImage:[UIImage imageNamed:@"start4@2x.png"]];
+        [_imageView setImage:[UIImage imageNamed:@"start4.png"]];
+        
+        CGRect startFrame = [self.startButton frame];
+        CGRect helpFrame = [self.helpButton frame];
+        CGRect creditsFrame = [self.creditsButton frame];
+        
+        startFrame.origin.y-=40;
+        helpFrame.origin.y-=40;
+        creditsFrame.origin.y-=40;
+        
+        [self.startButton setFrame:startFrame];
+        [self.helpButton setFrame:helpFrame];
+        [self.creditsButton setFrame:creditsFrame];
+        
+        [self.startButton removeFromSuperview];
+        [self.helpButton removeFromSuperview];
+        [self.creditsButton removeFromSuperview];
+        
+        [self.view addSubview:self.startButton];
+        [self.view addSubview:self.helpButton];
+        [self.view addSubview:self.creditsButton];
     }
 }
 
@@ -42,6 +64,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    heggPresses = 0;
 }
 
 
@@ -66,6 +93,14 @@
     {
         [self performSegueWithIdentifier:@"showCredits" sender:self];
     }
+    else if (sender == self.heggButton)
+    {
+        heggPresses++;
+        if (heggPresses == 7)
+        {
+            [self performSegueWithIdentifier:@"easterHegg" sender:self];
+        }
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -79,6 +114,11 @@
     {
         HelpViewController* helpViewController = (HelpViewController *)[segue destinationViewController];
         helpViewController.isCredits = YES;
+    }
+    else if ([[segue identifier] isEqualToString:@"easterHegg"])
+    {
+        HelpViewController* helpViewController = (HelpViewController *)[segue destinationViewController];
+        helpViewController.isHegg = YES;
     }
 }
 

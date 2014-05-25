@@ -64,9 +64,7 @@
     [self.webView setOpaque:NO];
     
     //[self setNeedsStatusBarAppearanceUpdate];
-    [self.statusBarView setBackgroundColor:[UIColor blackColor]];
-    
-    [self.buttonView setBackgroundColor:[UIColor clearColor]];
+    [self.statusBarView setBackgroundColor:[UIColor clearColor]];
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
@@ -226,12 +224,9 @@
                 calpurnia++; portia+=2; cassius+=3;
                 break;
             case 42:
-                cassius++; portia+=2;
-                break;
-            case 43:
                 portia++; soothsayer++; calpurnia+=4;
             case 50:
-                soothsayer++; cassius +=4;
+                soothsayer+=3; cassius +=4;
                 break;
             case 51:
                 flavius+=2; portia+=3; octavius+=4;
@@ -349,23 +344,14 @@
                 break;                
         }
     }
-    else if (screenNumber > 10 && [character isEqualToString:@"cassius"])
-    {
-        
-    }
-    else if (screenNumber > 10 && [character isEqualToString:@"flavius"])
-    {
-        
-    }
-    
 }
 
 - (void)chooseChar
 {
-    int pointsArray[6] = {soothsayer, octavius, calpurnia, portia, cassius, flavius};
+    int pointsArray[4] = {soothsayer, octavius, calpurnia, portia};
     int maxIndex = 0;
     int max = pointsArray[0];
-    for (int i = 1; i < 6; i++)
+    for (int i = 1; i < 4; i++)
     {
         if (pointsArray[i] > max)
         {
@@ -388,12 +374,12 @@
         case 3:
             character = @"portia";
             break;
-        case 4:
+        /*case 4:
             character = @"cassius";
             break;
         case 5:
             character = @"flavius";
-            break;
+            break;*/
         default:
             break;
     }

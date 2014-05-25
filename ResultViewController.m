@@ -36,13 +36,18 @@
             [self.imageView setImage:[UIImage imageNamed:@"dead"]];
         }
         else [self.imageView setImage:[UIImage imageNamed:@"dead4"]];
+        
+        [self.webView removeFromSuperview];
     }
     else if ([self.typesicle isEqualToString:@"YAY"])
     {
-        if (IsIphone5)
-        {
-            [self.imageView setImage:[UIImage imageNamed:self.character]];
-        }
+        [self.imageView setImage:[UIImage imageNamed:self.character]];
+       
+        [self.webView setDelegate:self];
+        [self.webView setBackgroundColor:[UIColor clearColor]];
+        [self.webView setOpaque:NO];
+        NSString *path = [[NSBundle mainBundle] pathForResource:self.character ofType:@"html" inDirectory:@"Screens"];
+        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
     }
 }
 

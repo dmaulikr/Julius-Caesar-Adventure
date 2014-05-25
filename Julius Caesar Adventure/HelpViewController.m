@@ -27,15 +27,29 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    if (self.isCredits)
+    if (self.isCredits && !self.isHegg)
     {
         if (IsIphone5)
             self.imageView.image = [UIImage imageNamed:@"credits.png"];
         else
             self.imageView.image = [UIImage imageNamed:@"credits4.png"];
     }
-    else
-        self.imageView.image = [UIImage imageNamed:@"help.png"];
+    else if (!self.isHegg)
+    {
+        if (IsIphone5)
+            self.imageView.image = [UIImage imageNamed:@"help.png"];
+        else
+            self.imageView.image = [UIImage imageNamed:@"help4.png"];
+    }
+    
+    // Easter hegg
+    else if (self.isHegg)
+    {
+        NSArray* hwalepillar = [NSArray arrayWithObjects:[UIImage imageNamed:@"hwale1"], [UIImage imageNamed:@"hwale2"], nil];
+        self.imageView.animationImages = hwalepillar;
+        self.imageView.animationDuration = 0.01;
+        [self.imageView startAnimating];
+    }
 }
 
 - (void)didReceiveMemoryWarning

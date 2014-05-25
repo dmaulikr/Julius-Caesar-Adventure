@@ -28,11 +28,18 @@
 		E5581171192528C9008BE4C0 /* Choices.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5581170192528C9008BE4C0 /* Choices.plist */; };
 		E55A84A1193173C900391742 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55A84A0193173C900391742 /* ResultViewController.m */; };
 		E55A84A31931798700391742 /* dead.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A21931798700391742 /* dead.png */; };
-		E55A84A51931798D00391742 /* dead4.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A41931798D00391742 /* dead4.png */; };
 		E55A84A81931927E00391742 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55A84A71931927E00391742 /* HelpViewController.m */; };
 		E55A84AA193193B000391742 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A9193193B000391742 /* help.png */; };
+		E5AF43FC1932A2600067C41F /* hwale1.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FA1932A2600067C41F /* hwale1.png */; };
+		E5AF43FD1932A2600067C41F /* hwale2.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FB1932A2600067C41F /* hwale2.png */; };
+		E5AF44011932A8190067C41F /* soothsayer.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FE1932A8190067C41F /* soothsayer.png */; };
+		E5AF44021932A8190067C41F /* portia.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FF1932A8190067C41F /* portia.png */; };
+		E5AF44031932A8190067C41F /* octavius.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF44001932A8190067C41F /* octavius.png */; };
+		E5AF44051932AA030067C41F /* calpurnia.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF44041932AA030067C41F /* calpurnia.png */; };
+		E5AF44071932ABD90067C41F /* dead4.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF44061932ABD90067C41F /* dead4.png */; };
 		E5D5BD6A1931988D0031FC06 /* credits4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5BD681931988D0031FC06 /* credits4@2x.png */; };
 		E5D5BD6B1931988D0031FC06 /* credits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5BD691931988D0031FC06 /* credits@2x.png */; };
+		E5D5C18219327F3000506AC0 /* help4.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5C18119327F3000506AC0 /* help4.png */; };
 		E5E95136192D978700567750 /* choicesBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E95135192D978700567750 /* choicesBG.png */; };
 		E5ED35B9192BD7F70098D50E /* shortTopBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */; };
 		E5ED35BA192BD7F70098D50E /* longTopBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */; };
@@ -78,12 +85,19 @@
 		E55A849F193173C900391742 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultViewController.h; path = ../ResultViewController.h; sourceTree = "<group>"; };
 		E55A84A0193173C900391742 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = ../ResultViewController.m; sourceTree = "<group>"; };
 		E55A84A21931798700391742 /* dead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead.png; sourceTree = "<group>"; };
-		E55A84A41931798D00391742 /* dead4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead4.png; sourceTree = "<group>"; };
 		E55A84A61931927E00391742 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		E55A84A71931927E00391742 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		E55A84A9193193B000391742 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		E5AF43FA1932A2600067C41F /* hwale1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hwale1.png; sourceTree = "<group>"; };
+		E5AF43FB1932A2600067C41F /* hwale2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hwale2.png; sourceTree = "<group>"; };
+		E5AF43FE1932A8190067C41F /* soothsayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soothsayer.png; sourceTree = "<group>"; };
+		E5AF43FF1932A8190067C41F /* portia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portia.png; sourceTree = "<group>"; };
+		E5AF44001932A8190067C41F /* octavius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octavius.png; sourceTree = "<group>"; };
+		E5AF44041932AA030067C41F /* calpurnia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calpurnia.png; sourceTree = "<group>"; };
+		E5AF44061932ABD90067C41F /* dead4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead4.png; sourceTree = "<group>"; };
 		E5D5BD681931988D0031FC06 /* credits4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credits4@2x.png"; sourceTree = "<group>"; };
 		E5D5BD691931988D0031FC06 /* credits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credits@2x.png"; sourceTree = "<group>"; };
+		E5D5C18119327F3000506AC0 /* help4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help4.png; sourceTree = "<group>"; };
 		E5E95135192D978700567750 /* choicesBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choicesBG.png; sourceTree = "<group>"; };
 		E5ED35B6192BD7F70098D50E /* shortTopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shortTopBG@2x.png"; sourceTree = "<group>"; };
 		E5ED35B7192BD7F70098D50E /* longTopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "longTopBG@2x.png"; sourceTree = "<group>"; };
@@ -147,10 +161,17 @@
 		E515C78119226C0300806CB5 /* Julius Caesar Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				E5AF44041932AA030067C41F /* calpurnia.png */,
+				E5AF43FE1932A8190067C41F /* soothsayer.png */,
+				E5AF43FF1932A8190067C41F /* portia.png */,
+				E5AF44001932A8190067C41F /* octavius.png */,
+				E5AF43FA1932A2600067C41F /* hwale1.png */,
+				E5AF43FB1932A2600067C41F /* hwale2.png */,
 				E5D5BD681931988D0031FC06 /* credits4@2x.png */,
 				E5D5BD691931988D0031FC06 /* credits@2x.png */,
+				E5D5C18119327F3000506AC0 /* help4.png */,
 				E55A84A9193193B000391742 /* help.png */,
-				E55A84A41931798D00391742 /* dead4.png */,
+				E5AF44061932ABD90067C41F /* dead4.png */,
 				E55A84A21931798700391742 /* dead.png */,
 				E538C3B8192FA9F1001D5476 /* start@2x.png */,
 				E538C3BA192FA9F7001D5476 /* start4@2x.png */,
@@ -285,9 +306,15 @@
 				E5581171192528C9008BE4C0 /* Choices.plist in Resources */,
 				E515C79719226C0300806CB5 /* Images.xcassets in Resources */,
 				E5D5BD6A1931988D0031FC06 /* credits4@2x.png in Resources */,
+				E5AF44031932A8190067C41F /* octavius.png in Resources */,
+				E5AF44051932AA030067C41F /* calpurnia.png in Resources */,
 				E538C3B9192FA9F1001D5476 /* start@2x.png in Resources */,
+				E5AF43FC1932A2600067C41F /* hwale1.png in Resources */,
+				E5D5C18219327F3000506AC0 /* help4.png in Resources */,
+				E5AF44021932A8190067C41F /* portia.png in Resources */,
 				E515C78F19226C0300806CB5 /* Main_iPhone.storyboard in Resources */,
-				E55A84A51931798D00391742 /* dead4.png in Resources */,
+				E5AF43FD1932A2600067C41F /* hwale2.png in Resources */,
+				E5AF44071932ABD90067C41F /* dead4.png in Resources */,
 				E5ED35BA192BD7F70098D50E /* longTopBG@2x.png in Resources */,
 				E5E95136192D978700567750 /* choicesBG.png in Resources */,
 				E538C3BB192FA9F7001D5476 /* start4@2x.png in Resources */,
@@ -297,6 +324,7 @@
 				E55A84AA193193B000391742 /* help.png in Resources */,
 				E5FD70D7192E5DDC008F009C /* cellBG.png in Resources */,
 				E55A84A31931798700391742 /* dead.png in Resources */,
+				E5AF44011932A8190067C41F /* soothsayer.png in Resources */,
 				E558116F192511C4008BE4C0 /* Screens in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
