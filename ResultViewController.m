@@ -35,7 +35,7 @@
         {
             [self.imageView setImage:[UIImage imageNamed:@"dead"]];
         }
-        else [self.imageView setImage:[UIImage imageNamed:@"dead4"]];
+        else [self.imageView setImage:[UIImage imageNamed:@"deadShort"]];
         
         [self.webView removeFromSuperview];
     }

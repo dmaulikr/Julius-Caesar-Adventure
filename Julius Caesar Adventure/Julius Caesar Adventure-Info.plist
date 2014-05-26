@@ -43,7 +43,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>UIViewControllerBasedStatusBarAppearance</key>
-    <string>YES</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<string>YES</string>
 </dict>
 </plist>

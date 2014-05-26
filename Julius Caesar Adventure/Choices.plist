@@ -166,8 +166,8 @@
 	</array>
 	<key>calpurnia3</key>
 	<array>
-		<string>Yes, it must be my head playing tricks</string>
-		<string>No, the red must mean something</string>
+		<string>Yes, it's just my head</string>
+		<string>No, it's a sign</string>
 	</array>
 	<key>calpurnia4</key>
 	<array>
@@ -178,6 +178,10 @@
 		<string>Yes, of course!</string>
 		<string>No, he&apos;s not for me</string>
 	</array>
+    <key>calpurnia20</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
 	<key>calpurnia51</key>
 	<array>
 		<string>Ouch...</string>

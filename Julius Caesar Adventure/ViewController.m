@@ -418,6 +418,7 @@
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = [UIFont fontWithName:@"IowanOldStyle-Bold" size:17.0];
+    cell.textLabel.adjustsFontSizeToFitWidth = YES;
     
     return cell;
 }

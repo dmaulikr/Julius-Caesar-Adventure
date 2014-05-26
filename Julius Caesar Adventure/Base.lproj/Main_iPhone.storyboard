@@ -194,15 +194,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Continue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJY-6P-Dlp">
-                                <rect key="frame" x="181" y="542" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="137" id="MHk-7a-CSs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-ef-DXg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -232,12 +223,9 @@
                             <constraint firstAttribute="bottom" secondItem="ZOS-wR-1nt" secondAttribute="bottom" id="1pv-6m-yr7"/>
                             <constraint firstItem="LlA-ef-DXg" firstAttribute="leading" secondItem="22d-FH-eOV" secondAttribute="leading" id="2xV-da-V3y"/>
                             <constraint firstItem="ZOS-wR-1nt" firstAttribute="top" secondItem="22d-FH-eOV" secondAttribute="top" constant="20" symbolic="YES" id="L4e-hL-zdB"/>
-                            <constraint firstItem="UqI-3a-Ch1" firstAttribute="top" secondItem="aJY-6P-Dlp" secondAttribute="bottom" constant="5" id="S3w-oS-L0n"/>
                             <constraint firstItem="ZOS-wR-1nt" firstAttribute="leading" secondItem="LlA-ef-DXg" secondAttribute="leading" id="TpZ-lV-spS"/>
                             <constraint firstAttribute="bottom" secondItem="LlA-ef-DXg" secondAttribute="bottom" constant="-5" id="Y19-4K-msY"/>
-                            <constraint firstAttribute="trailing" secondItem="aJY-6P-Dlp" secondAttribute="trailing" constant="2" id="aB2-W2-ahV"/>
                             <constraint firstItem="16U-zG-gUk" firstAttribute="top" secondItem="ene-Jb-EZw" secondAttribute="bottom" constant="262" id="cwv-rC-kPF"/>
-                            <constraint firstItem="aJY-6P-Dlp" firstAttribute="top" secondItem="16U-zG-gUk" secondAttribute="bottom" constant="8" symbolic="YES" id="fEs-Dg-Vks"/>
                             <constraint firstItem="16U-zG-gUk" firstAttribute="leading" secondItem="22d-FH-eOV" secondAttribute="leading" constant="20" symbolic="YES" id="gNF-nJ-5Pf"/>
                             <constraint firstItem="16U-zG-gUk" firstAttribute="centerX" secondItem="ZOS-wR-1nt" secondAttribute="centerX" id="ky0-yl-Lq8"/>
                             <constraint firstItem="LlA-ef-DXg" firstAttribute="top" secondItem="22d-FH-eOV" secondAttribute="top" id="y0M-8J-uiJ"/>
@@ -247,7 +235,6 @@
                     <connections>
                         <outlet property="againButton" destination="ZOS-wR-1nt" id="qhu-ZT-Yub"/>
                         <outlet property="imageView" destination="LlA-ef-DXg" id="Izm-8D-jst"/>
-                        <outlet property="tapLabel" destination="aJY-6P-Dlp" id="5Ie-np-Lqr"/>
                         <outlet property="webView" destination="16U-zG-gUk" id="j3H-qL-yyD"/>
                     </connections>
                 </viewController>
