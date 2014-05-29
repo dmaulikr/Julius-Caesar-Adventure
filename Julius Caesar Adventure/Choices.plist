@@ -221,5 +221,85 @@
 	<array>
 		<string>Ouch...</string>
 	</array>
+    <key>cassius0</key>
+    <array>
+        <string>The wind</string>
+        <string>A reflection</string>
+        <string>None of the above</string>
+    </array>
+    <key>cassius1</key>
+    <array>
+        <string>Yes, it's good to share</string>
+        <string>No</string>
+    </array>
+    <key>cassius2</key>
+    <array>
+        <string>A warrior</string>
+        <string>A tactician</string>
+    </array>
+    <key>cassius3</key>
+    <array>
+        <string>Run! I'll lose if I fight</string>
+        <string>Stay and fight!</string>
+    </array>
+    <key>cassius4</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
+    <key>cassius5</key>
+    <array>
+        <string>Yes, why not</string>
+        <string>No, I still have a chance</string>
+    </array>
+    <key>cassius20</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
+    <key>cassius31</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
+    <key>cassius51</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
+    <key>flavius0</key>
+    <array>
+        <string>Yes, it will help my image</string>
+        <string>Yes, it's the right choice</string>
+        <string>No</string>
+    </array>
+    <key>flavius1</key>
+    <array>
+        <string>Warrior</string>
+        <string>Archer</string>
+    </array>
+    <key>flavius2</key>
+    <array>
+        <string>Fight! I will defend my camp!</string>
+        <string>Run away!</string>
+    </array>
+    <key>flavius3</key>
+    <array>
+        <string>Yes! Why would I not?</string>
+        <string>No, she seems snobbish</string>
+    </array>
+    <key>flavius4</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
+    <key>flavius5</key>
+    <array>
+        <string>Keep the money</string>
+        <string>Donate the money</string>
+    </array>
+    <key>flavius51</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
+    <key>flavius20</key>
+    <array>
+        <string>Ouch...</string>
+    </array>
 </dict>
 </plist>

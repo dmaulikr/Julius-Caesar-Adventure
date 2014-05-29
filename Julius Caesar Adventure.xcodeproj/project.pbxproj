@@ -31,6 +31,8 @@
 		E55A84A81931927E00391742 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55A84A71931927E00391742 /* HelpViewController.m */; };
 		E55A84AA193193B000391742 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = E55A84A9193193B000391742 /* help.png */; };
 		E561C0031932CF3000C86965 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E561C0011932CF3000C86965 /* Main_iPad.storyboard */; };
+		E5AE09A819364B1F000B6CA9 /* cassius.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AE09A619364B1F000B6CA9 /* cassius.png */; };
+		E5AE09A919364B1F000B6CA9 /* flavius.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AE09A719364B1F000B6CA9 /* flavius.png */; };
 		E5AF43FC1932A2600067C41F /* hwale1.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FA1932A2600067C41F /* hwale1.png */; };
 		E5AF43FD1932A2600067C41F /* hwale2.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FB1932A2600067C41F /* hwale2.png */; };
 		E5AF44011932A8190067C41F /* soothsayer.png in Resources */ = {isa = PBXBuildFile; fileRef = E5AF43FE1932A8190067C41F /* soothsayer.png */; };
@@ -60,7 +62,7 @@
 /* Begin PBXFileReference section */
 		E512164D192F9A9B00B02A6E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		E512164E192F9A9B00B02A6E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
-		E515C77819226C0300806CB5 /* Julius Caesar Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Julius Caesar Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E515C77819226C0300806CB5 /* Caesar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caesar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E515C77B19226C0300806CB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E515C77D19226C0300806CB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E515C77F19226C0300806CB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +92,8 @@
 		E55A84A71931927E00391742 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		E55A84A9193193B000391742 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		E561C0021932CF3000C86965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Julius Caesar Adventure/Base.lproj/Main_iPad.storyboard"; sourceTree = "<group>"; };
+		E5AE09A619364B1F000B6CA9 /* cassius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cassius.png; sourceTree = "<group>"; };
+		E5AE09A719364B1F000B6CA9 /* flavius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flavius.png; sourceTree = "<group>"; };
 		E5AF43FA1932A2600067C41F /* hwale1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hwale1.png; sourceTree = "<group>"; };
 		E5AF43FB1932A2600067C41F /* hwale2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hwale2.png; sourceTree = "<group>"; };
 		E5AF43FE1932A8190067C41F /* soothsayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soothsayer.png; sourceTree = "<group>"; };
@@ -143,7 +147,7 @@
 		E515C77919226C0300806CB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E515C77819226C0300806CB5 /* Julius Caesar Adventure.app */,
+				E515C77819226C0300806CB5 /* Caesar.app */,
 				E515C79C19226C0400806CB5 /* Julius Caesar AdventureTests.xctest */,
 			);
 			name = Products;
@@ -163,6 +167,8 @@
 		E515C78119226C0300806CB5 /* Julius Caesar Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				E5AE09A619364B1F000B6CA9 /* cassius.png */,
+				E5AE09A719364B1F000B6CA9 /* flavius.png */,
 				E5AF44041932AA030067C41F /* calpurnia.png */,
 				E5AF43FE1932A8190067C41F /* soothsayer.png */,
 				E5AF43FF1932A8190067C41F /* portia.png */,
@@ -247,7 +253,7 @@
 			);
 			name = "Julius Caesar Adventure";
 			productName = "Julius Caesar Adventure";
-			productReference = E515C77819226C0300806CB5 /* Julius Caesar Adventure.app */;
+			productReference = E515C77819226C0300806CB5 /* Caesar.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E515C79B19226C0400806CB5 /* Julius Caesar AdventureTests */ = {
@@ -313,6 +319,7 @@
 				E515C79719226C0300806CB5 /* Images.xcassets in Resources */,
 				E5D5BD6A1931988D0031FC06 /* credits4@2x.png in Resources */,
 				E5AF44031932A8190067C41F /* octavius.png in Resources */,
+				E5AE09A919364B1F000B6CA9 /* flavius.png in Resources */,
 				E5AF44051932AA030067C41F /* calpurnia.png in Resources */,
 				E538C3B9192FA9F1001D5476 /* start@2x.png in Resources */,
 				E5AF43FC1932A2600067C41F /* hwale1.png in Resources */,
@@ -325,6 +332,7 @@
 				E5E95136192D978700567750 /* choicesBG.png in Resources */,
 				E538C3BB192FA9F7001D5476 /* start4@2x.png in Resources */,
 				E5D5BD6B1931988D0031FC06 /* credits@2x.png in Resources */,
+				E5AE09A819364B1F000B6CA9 /* cassius.png in Resources */,
 				E515C78619226C0300806CB5 /* InfoPlist.strings in Resources */,
 				E5ED35B9192BD7F70098D50E /* shortTopBG@2x.png in Resources */,
 				E55A84AA193193B000391742 /* help.png in Resources */,

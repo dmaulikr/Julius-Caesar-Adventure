@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E515C77719226C0300806CB5"
-               BuildableName = "Julius Caesar Adventure.app"
+               BuildableName = "Caesar.app"
                BlueprintName = "Julius Caesar Adventure"
                ReferencedContainer = "container:Julius Caesar Adventure.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E515C77719226C0300806CB5"
-            BuildableName = "Julius Caesar Adventure.app"
+            BuildableName = "Caesar.app"
             BlueprintName = "Julius Caesar Adventure"
             ReferencedContainer = "container:Julius Caesar Adventure.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E515C77719226C0300806CB5"
-            BuildableName = "Julius Caesar Adventure.app"
+            BuildableName = "Caesar.app"
             BlueprintName = "Julius Caesar Adventure"
             ReferencedContainer = "container:Julius Caesar Adventure.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E515C77719226C0300806CB5"
-            BuildableName = "Julius Caesar Adventure.app"
+            BuildableName = "Caesar.app"
             BlueprintName = "Julius Caesar Adventure"
             ReferencedContainer = "container:Julius Caesar Adventure.xcodeproj">
          </BuildableReference>

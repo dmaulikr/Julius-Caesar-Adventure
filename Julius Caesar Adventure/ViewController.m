@@ -123,8 +123,9 @@
 {
     if ([direction isEqualToString:@"BACK"])
     {
-        screenTitle = @"0";
-        screenNumber = 0;
+        [self subtractPoints];
+        screenTitle = [screenTitle substringToIndex:(screenTitle.length - 1)];
+        screenTitle = [screenTitle stringByAppendingString:@"_"];
     }
     else if ([direction isEqualToString:@"NEXT"])
     {
@@ -179,10 +180,12 @@
     }
 }
 
+# pragma mark - Point management
+
 - (void)addPoints
 {
     int screenInt;
-    if (screenNumber > 10)
+    if (screenNumber >= 10)
     {
         NSString* lastTwo = [screenTitle substringFromIndex:(screenTitle.length - 2)];
         screenInt = [lastTwo intValue];
@@ -238,10 +241,10 @@
                 flavius++; cassius++; soothsayer+=3;
                 break;
             case 60:
-                cassius++; soothsayer++; calpurnia+=2; octavius+=3;
+                flavius++; soothsayer++; calpurnia+=2; octavius+=3;
                 break;
             case 61:
-                octavius++; flavius+=3;
+                octavius++; flavius+=4;
                 break;
             case 62:
                 cassius+=2; portia+=2; soothsayer+=2;
@@ -253,10 +256,10 @@
                 portia++; octavius+=2; cassius+=2; flavius+=2; soothsayer+=2;
                 break;
             case 80:
-                cassius++; flavius++; portia++; octavius+=3;
+                cassius+=3; flavius++; portia++; octavius+=2;
                 break;
             case 81:
-                flavius+=2; cassius+=2;
+                flavius+=3; cassius+=2;
                 break;
             case 82:
                 portia++; soothsayer++; calpurnia+=4;
@@ -274,7 +277,7 @@
                 break;
         }
     }
-    else if (screenNumber > 10 && [character isEqualToString:@"soothsayer"])
+    else if (screenNumber >= 10 && [character isEqualToString:@"soothsayer"])
     {
         switch (screenInt)
         {
@@ -294,7 +297,7 @@
                 break;
         }
     }
-    else if (screenNumber > 10 && [character isEqualToString:@"octavius"])
+    else if (screenNumber >= 10 && [character isEqualToString:@"octavius"])
     {
         switch (screenInt)
         {
@@ -310,7 +313,7 @@
                 break;
         }
     }
-    else if (screenNumber > 10 && [character isEqualToString:@"calpurnia"])
+    else if (screenNumber >= 10 && [character isEqualToString:@"calpurnia"])
     {
         switch (screenInt)
         {
@@ -327,7 +330,7 @@
                 break;
         }
     }
-    else if (screenNumber > 10 && [character isEqualToString:@"portia"])
+    else if (screenNumber >= 10 && [character isEqualToString:@"portia"])
     {
         switch (screenInt)
         {
@@ -344,14 +347,253 @@
                 break;                
         }
     }
+    else if (screenNumber >= 10 && [character isEqualToString:@"cassius"])
+    {
+        switch (screenInt)
+        {
+            case 00:
+                cassius-=5;
+                break;
+            case 01:
+                cassius-=5;
+                break;
+            case 10:
+                cassius-=15;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber >= 10 && [character isEqualToString:@"flavius"])
+    {
+        switch (screenInt) {
+            case 01:
+                flavius-=10;
+                break;
+            case 02:
+                flavius-=5;
+                break;
+            case 10:
+                flavius-=10;
+                break;
+            case 31:
+                flavius-=100;
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+- (void)subtractPoints
+{
+    int screenInt;
+    if (screenNumber >= 10)
+    {
+        NSString* lastTwo = [screenTitle substringFromIndex:(screenTitle.length - 2)];
+        screenInt = [lastTwo intValue];
+    }
+    else screenInt = [screenTitle intValue];
+    
+    if (screenNumber < 10)
+    {
+        switch (screenInt)
+        {
+            case 00:
+                soothsayer--; octavius--;
+                break;
+            case 01:
+                calpurnia--; portia--; cassius--; flavius--;
+                break;
+            case 10:
+                soothsayer-=4; calpurnia--;
+                break;
+            case 20:
+                portia-=2 ; soothsayer-=2;
+                break;
+            case 21:
+                calpurnia--; cassius-=2; octavius-=2; flavius-=3;
+                break;
+            case 30:
+                portia-=3; octavius-=4;
+                break;
+            case 31:
+                soothsayer-=2; calpurnia-=4;
+                break;
+            case 32:
+                flavius-=3; cassius-=4;
+                break;
+            case 40:
+                soothsayer--; cassius--; calpurnia--; flavius-=2; octavius-=3;
+                break;
+            case 41:
+                calpurnia--; portia-=2; cassius-=3;
+                break;
+            case 42:
+                portia--; soothsayer--; calpurnia-=4;
+            case 50:
+                soothsayer-=3; cassius-=4;
+                break;
+            case 51:
+                flavius-=2; portia-=3; octavius-=4;
+                break;
+            case 52:
+                portia--; soothsayer--; calpurnia-=4;
+                break;
+            case 53:
+                flavius--; cassius--; soothsayer-=3;
+                break;
+            case 60:
+                flavius--; soothsayer--; calpurnia-=2; octavius-=3;
+                break;
+            case 61:
+                octavius--; flavius-=4;
+                break;
+            case 62:
+                cassius-=2; portia-=2; soothsayer-=2;
+                break;
+            case 70:
+                portia-=2; calpurnia-=2;
+                break;
+            case 71:
+                portia--; octavius-=2; cassius-=2; flavius-=2; soothsayer-=2;
+                break;
+            case 80:
+                cassius-=3; flavius--; portia--; octavius-=2;
+                break;
+            case 81:
+                flavius-=3; cassius-=2;
+                break;
+            case 82:
+                portia--; soothsayer--; calpurnia-=4;
+                break;
+            case 90:
+                flavius--; portia-=3; octavius-=4;
+                break;
+            case 91:
+                flavius-=2; soothsayer-=3; cassius-=3;
+                break;
+            case 92:
+                soothsayer--; calpurnia-=3;
+                break;
+            default:
+                break;
+        }
+    }
+	else if (screenNumber >= 10 && [character isEqualToString:@"soothsayer"])
+    {
+        switch (screenInt)
+        {
+            case 01:
+                soothsayer+=10;
+                break;
+            case 12:
+                soothsayer+=15;
+                break;
+            case 20:
+                soothsayer+=10;
+                break;
+            case 31:
+                soothsayer+=100;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber >= 10 && [character isEqualToString:@"octavius"])
+    {
+        switch (screenInt)
+        {
+            case 11:
+                octavius+= 10;
+                break;
+            case 21:
+                octavius+= 10;
+                break;
+            case 31:
+                octavius+= 15;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber >= 10 && [character isEqualToString:@"calpurnia"])
+    {
+        switch (screenInt)
+        {
+            case 00:
+                calpurnia+=10;
+                break;
+            case 11:
+                calpurnia+=15;
+                break;
+            case 30:
+                calpurnia+=15;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber >= 10 && [character isEqualToString:@"portia"])
+    {
+        switch (screenInt)
+        {
+            case 01:
+                portia+=15;
+                break;
+            case 02:
+                portia+=100;
+                break;
+            case 11:
+                portia+=15;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber >= 10 && [character isEqualToString:@"cassius"])
+    {
+        switch (screenInt)
+        {
+            case 00:
+                cassius+=5;
+                break;
+            case 01:
+                cassius+=5;
+                break;
+            case 10:
+                cassius+=15;
+                break;
+            default:
+                break;
+        }
+    }
+    else if (screenNumber >= 10 && [character isEqualToString:@"flavius"])
+    {
+        switch (screenInt) {
+            case 01:
+                flavius+=10;
+                break;
+            case 02:
+                flavius+=5;
+                break;
+            case 10:
+                flavius+=10;
+                break;
+            case 31:
+                flavius+=100;
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 - (void)chooseChar
 {
-    int pointsArray[4] = {soothsayer, octavius, calpurnia, portia};
+    int pointsArray[6] = {soothsayer, octavius, calpurnia, portia, cassius, flavius};
     int maxIndex = 0;
     int max = pointsArray[0];
-    for (int i = 1; i < 4; i++)
+    for (int i = 1; i < 6; i++)
     {
         if (pointsArray[i] > max)
         {
@@ -374,12 +616,12 @@
         case 3:
             character = @"portia";
             break;
-        /*case 4:
+        case 4:
             character = @"cassius";
             break;
         case 5:
             character = @"flavius";
-            break;*/
+            break;
         default:
             break;
     }
@@ -452,13 +694,26 @@
 {
     if (sender == self.logoButton)
     {
-        UIActionSheet *actionSheet = [[UIActionSheet alloc]
-                                      initWithTitle:@""
-                                      delegate:self
-                                      cancelButtonTitle:@"Cancel"
-                                      destructiveButtonTitle:@"Back to Start"
-                                      otherButtonTitles:nil];
-        [actionSheet showInView:[self view]];
+        if (![screenTitle hasSuffix:@"_"])
+        {
+            UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                          initWithTitle:@""
+                                          delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          destructiveButtonTitle:@"Back to Start"
+                                          otherButtonTitles:@"Back One Screen", nil];
+            [actionSheet showInView:[self view]];
+        }
+        else
+        {
+            UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                          initWithTitle:@""
+                                          delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          destructiveButtonTitle:@"Back to Start"
+                                          otherButtonTitles:nil];
+            [actionSheet showInView:[self view]];
+        }
     }
 }
 
@@ -469,6 +724,11 @@
     {
         soothsayer = 0; octavius = 0; calpurnia = 0; portia = 0; cassius = 0; flavius = 0;
         [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else if ([buttonTitle isEqualToString:@"Back One Screen"])
+    {
+        [self updateDisplay:nil direction:@"BACK"];
+        [self updateChoicesArray];
     }
 }
 
